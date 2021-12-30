@@ -1,5 +1,5 @@
 import mysql.connector
-mydb=mysql.connector.connect ( host = "localhost", user= "root", password="2980", database="test")
+mydb=mysql.connector.connect ( host = "localhost", user= "CurrentUser(Default root)", password="YourPassword", database="YourDatabaseName")
 mycursor=mydb.cursor()
 title1 = input("Enter Your Task Title : ")
 message1 = input("Enter Your Task Message : ")
