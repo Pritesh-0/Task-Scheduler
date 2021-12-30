@@ -7,10 +7,10 @@ now = datetime.now()
 current_hour = now.strftime("%H")
 current_min = now.strftime("%M")
 
-mydb=mysql.connector.connect ( host = "localhost", user= "root", password="2980", database="test")
+mydb=mysql.connector.connect ( host = "localhost", user= "CurrentUser(Default root)", password="YourPassword", database="YourDatabaseName")
 mycursor=mydb.cursor()
 
-mycursor.execute("select * from t3")
+mycursor.execute("select * from 'YourTableName'")
 myres = mycursor.fetchall()
 print(myres)
 
